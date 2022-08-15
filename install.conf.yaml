@@ -1,0 +1,14 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/tmux: tmux
+    ~/.config/nvim: nvim
+    ~/.config/yabai: yabai
+    ~/.config/skhd: skhd
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
