@@ -9,6 +9,9 @@
     ~/.config/nvim: nvim
     ~/.config/yabai: yabai
     ~/.config/skhd: skhd
+    ~/.config/lazygit: lazygit
+    ~/Brewfile: BrewFile
+    ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
