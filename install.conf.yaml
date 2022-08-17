@@ -4,6 +4,8 @@
 
 - clean: ['~']
 
+# add brew and zsh config to dotfiles
+
 - link:
     ~/.config/tmux: tmux
     ~/.config/nvim: nvim
@@ -14,4 +16,5 @@
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
 
 - shell:
-  - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules]
+    - [sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer]

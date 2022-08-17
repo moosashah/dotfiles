@@ -45,11 +45,9 @@ vim.api.nvim_create_autocmd({ 'TextYankPost' }, {
 	end,
 })
 
---example 
--- vim.api.nvim_create_autocmd({ 'FileType' }, {
---   group = vim.api.nvim_create_augroup('CursorLine on NvimTree', {clear = true}),
---   pattern = { 'nvimtree'},
--- 	callback = function()
---     print('nvim tree opened')
--- 	end,
--- })
+-- run go code on save
+vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
+	group = vim.api.nvim_create_augroup('Run command on save', { clear = true }),
+	pattern = { 'hello.go' },
+	command = '2TermExec cmd="go run hello.go" size=30 direction=horizontal',
+})
