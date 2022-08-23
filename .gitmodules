@@ -2,9 +2,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
-[submodule "qmk_firmware"]
-	path = qmk_firmware
-	url = https://github.com/moosashah/qmk_firmware
 [submodule "nvim"]
 	path = nvim
 	url = https://github.com/moosashah/nvim
