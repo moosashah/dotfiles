@@ -18,3 +18,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer]
+    - [sudo ln -s ~/dotfiles/bin/gtc.sh /usr/local/bin/gtc]
