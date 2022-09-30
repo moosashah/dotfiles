@@ -2,20 +2,20 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 # add brew and zsh config to dotfiles
 
 - link:
     ~/.config/tmux: tmux
     ~/.config/nvim: nvim
-    ~/.config/yabai: yabai
-    ~/.config/skhd: skhd
     ~/.config/lazygit: lazygit
     ~/Brewfile: BrewFile
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer]
+    - [
+        sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer,
+      ]
     - [sudo ln -s ~/dotfiles/bin/gtc.sh /usr/local/bin/gtc]
