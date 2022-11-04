@@ -48,8 +48,6 @@ mkd(){
 
 alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
 
-# alias gttkn="TOKEN=$(curl -X POST -H "Content-Type: application/json" -d '{"email": "email3@example.com",  "password": "password"}'  http://localhost:3000/user/login | jq -r '.accessToken')"
-
 #Docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
