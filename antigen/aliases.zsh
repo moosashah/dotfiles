@@ -25,6 +25,7 @@ alias gpnb="git push -u origin HEAD"
 alias ghprme="gh pr create --assignee=@me --web"
 alias ghprv="gh pr view --web"
 alias cmh="npx ts-node -T ~/dotfiles/bin/cmh.ts"
+alias gmsg="~/personalCoding/scripting/conventional-commit"
 gspp(){
 	git stash pop stash@{$1}
 }
@@ -34,6 +35,8 @@ gpth(){ #Create patch from staged changes
 ghpr() {
   GH_FORCE_TTY=100% gh pr list | fzf --ansi --preview 'GH_FORCE_TTY=100% gh pr view {1}' --preview-window down --header-lines 3 | awk '{print $1}' | xargs gh pr checkout
 }
+
+
 
 # networkQuality //test internet speed
 alias speed="networkQuality"
