@@ -25,7 +25,7 @@ alias gpnb="git push -u origin HEAD"
 alias ghprme="gh pr create --assignee=@me --web"
 alias ghprv="gh pr view --web"
 alias cmh="npx ts-node -T ~/dotfiles/bin/cmh.ts"
-alias gmsg="~/personalCoding/scripting/conventional-commit"
+alias gmsg="conventional-commit"
 gspp(){
 	git stash pop stash@{$1}
 }
