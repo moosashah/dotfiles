@@ -1745,6 +1745,39 @@
 	<false/>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x31-0x100000-0x12</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>0x01 0x31</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x32-0x100000-0x13</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>0x01 0x32</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
+		<key>0x33-0x100000-0x14</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Label</key>
+			<string></string>
+			<key>Text</key>
+			<string>0x01 0x33</string>
+			<key>Version</key>
+			<integer>1</integer>
+		</dict>
 		<key>0x44-0x120000-0x2</key>
 		<dict>
 			<key>Action</key>
@@ -2132,7 +2165,7 @@
 				<real>0.20784313976764679</real>
 			</dict>
 			<key>Blend</key>
-			<real>0.20541072237318847</real>
+			<real>0.28422780797101455</real>
 			<key>Blinking Cursor</key>
 			<false/>
 			<key>Blur</key>

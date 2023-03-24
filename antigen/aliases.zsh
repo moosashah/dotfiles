@@ -18,6 +18,11 @@ alias cat="bat"
 alias yst='yarn start'
 alias yd='yarn dev'
 alias yb='yarn build'
+alias yt='yarn test'
+
+# Npm
+alias nrd='npm run dev'
+alias nri='npm install'
 
 # Git 
 alias gss="git stash save -u"
@@ -41,8 +46,8 @@ ghpr() {
 # networkQuality //test internet speed
 alias speed="networkQuality"
 
-#Personal Coding 
 alias cdpc="cd ~/personalCoding"
+alias cdnv="cd ~/dotfiles/nvim"
 
 #Make directory and cd into it
 mkd(){
@@ -54,4 +59,3 @@ alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
 #Docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
-alias dcl="docker volume rm medlify-plugin_dynamodata"
