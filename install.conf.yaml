@@ -11,6 +11,7 @@
     ~/.config/antigen: antigen
     ~/.config/nvim: nvim
     ~/.config/lazygit: lazygit
+    ~/.config/alacritty: alacritty
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
 
 - shell:
