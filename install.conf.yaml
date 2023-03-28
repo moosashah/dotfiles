@@ -12,6 +12,7 @@
     ~/.config/nvim: nvim
     ~/.config/lazygit: lazygit
     ~/.config/alacritty: alacritty
+    ~/.config/starship.toml: starship.toml
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
 
 - shell:
