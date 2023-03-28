@@ -1,13 +1,3 @@
-#
-#  █████╗ ██╗      █████╗  ██████╗██████╗ ██╗████████╗████████╗██╗   ██╗
-# ██╔══██╗██║     ██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
-# ███████║██║     ███████║██║     ██████╔╝██║   ██║      ██║    ╚████╔╝
-# ██╔══██║██║     ██╔══██║██║     ██╔══██╗██║   ██║      ██║     ╚██╔╝
-# ██║  ██║███████╗██║  ██║╚██████╗██║  ██║██║   ██║      ██║      ██║
-# ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝
-# A cross-platform, OpenGL terminal emulator.
-# https://alacritty.org
-
 live_config_reload: true
 
 env:
@@ -19,46 +9,39 @@ font:
   size: 22
 
 window:
-  opacity: 0.8
   dynamic_padding: false
   decorations: buttonless
 
+mouse:
+  hints:
+    launcher:
+      program: open
+    modifiers: Command
+
+
+selection:
+  semantic_escape_chars: ",|`:\"'()[]{}<>\t"
+  save_to_clipboard: true
+
 # NOTE: helpful hex codes
 # \x1b = escape (useful for vim-related keybindings)
-# \x01 = control-b (the default tmux prefix)
+# \x01 = control-a 
 
 key_bindings:
-  - { key: Key1, mods: Command, chars: "\x011" } # select tmux window 1
-  - { key: Key2, mods: Command, chars: "\x012" } #                ... 2
-  - { key: Key3, mods: Command, chars: "\x013" } #                ... 3
-  - { key: Key4, mods: Command, chars: "\x014" } #                ... 4
-  - { key: R, mods: Command, chars: "\x01," } # rename the current tmux window
-  - { key: D, mods: Command, chars: "\x01\"" } # split tmux window vertically
-  - { key: D, mods: Command|Shift, chars: "\x01%" } # split tmux window horizontally
+  - { key: Key1, mods: Command, chars: "\x011" }
+  - { key: Key2, mods: Command, chars: "\x012" }
+  - { key: Key3, mods: Command, chars: "\x013" }
+  - { key: Key4, mods: Command, chars: "\x014" }
+  - { key: R, mods: Command, chars: "\x01," }              # rename the current tmux window
+  - { key: D, mods: Command|Shift, chars: "\x01\"" }       # split tmux window horizontally
+  - { key: D, mods: Command, chars: "\x01%" }              # split tmux window vertically
   - { key: F, mods: Command|Shift, chars: "\x01\x5b\x2f" } # start tmux search mode
-  - { key: Right, mods: Command|Alt, chars: "\x01\x4d" } 
-  - { key: Left, mods: Command|Alt, chars: "\x01\x4b" } 
-  - { key: Up, mods: Command|Alt, chars: "\x01\xc8" } 
-  - { key: Down, mods: Command|Alt, chars: "\x01\xd0" } 
-  #  - { key: F, mods: Command, chars: "lfcd\n" } # open file manager 'gokcehan/lf'
-  - { key: G, mods: Command, chars: "\x01g" } # open git manager 'jesseduffield/lazygit'
-  #- { key: J, mods: Command, chars: "\x01\x54" } # open t - tmux smart session manager
-  #- { key: K, mods: Command, chars: "\x01s" } # open interactive tmux session client
-  - { key: L, mods: Command, chars: "\x01L" } # switch to the last tmux session
-  #  - { key: LBracket, mods: Command, chars: "\x0f" } # navigate back (ctrl+o)
-  #  - { key: LBracket, mods: Command|Shift, chars: "\x01p" } # switch to next tmux window
-  #- { key: O, mods: Command, chars: "\x01u" }
-  #- { key: P, mods: Command, chars: ":GoToFile\n" } # files
-  #- { key: P, mods: Command|Shift, chars: ":GoToCommand\n" } # commands
-  # - { key: Period, mods: Command, chars: "\x1b\x20\x2e\x0a" } (causes popup to be unfocused)
-  - { key: Q, mods: Command, chars: ":q\n" } # quit vim
-  #- { key: R, mods: Command, chars: "\x1b\x5b\x41\x0a" }
-  #- { key: RBracket, mods: Command, chars: "\x09" }
-  #- { key: RBracket, mods: Command|Shift, chars: "\x01n" }
-  #- { key: S, mods: Command, chars: "\x1b\x3a\x77\x0a" } # save vim buffer
-  #- { key: S, mods: Command|Shift, chars: ":wa\n" } # save all
-  #- { key: Semicolon, mods: Command, chars: "\x01:" } # enter the tmux command prompt
-  - { key: T, mods: Command, chars: "\x01c" } # create a new tmux window
-  - { key: W, mods: Command, chars: "\x01x" } # kill the current pane
-  - { key: Z, mods: Command, chars: "\x01z" } # toggle zoom state of the current tmux pane
+  - { key: G, mods: Command, chars: "\x01g" }              # open git manager 'jesseduffield/lazygit'
+  - { key: Comma, mods: Command, chars: "\x01," }           # Open Alacritty config in new window
+  - { key: Period, mods: Command, chars: "\x01N" }          # Open Tmux config in new window
+  - { key: N, mods: Command, chars: "\x01m" }               # Open Neovim config in new window
+  - { key: L, mods: Command, chars: "\x01L" }              # switch to the last tmux session
+  - { key: T, mods: Command, chars: "\x01c" }              # create a new tmux window
+  - { key: W, mods: Command, chars: "\x01x" }              # kill the current pane
+  - { key: Z, mods: Command, chars: "\x01z" }              # toggle zoom state of the current tmux pane
 

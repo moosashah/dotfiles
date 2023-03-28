@@ -1,11 +1,13 @@
 alias acfg="nvim ~/dotfiles/antigen/aliases.zsh"
-alias nvc="nvim ~/.config/nvim/init.lua"
+alias nvc="cd ~/.config/nvim && nv init.lua"
 alias zshconf="nvim ~/.zshrc"
 alias soacfg="source ~/dotfiles/antigen/aliases.zsh"
 
 alias vim="nvim"
 alias vi="nvim"
 alias nv="nvim"
+
+alias lg="lazygit"
 
 #exa
 alias ls="exa --oneline --all"
