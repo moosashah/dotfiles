@@ -7,6 +7,8 @@ font:
   normal:
     family: "CodeNewRoman Nerd Font"
   size: 22
+  offset:
+    y: 8
 
 window:
   dynamic_padding: false
