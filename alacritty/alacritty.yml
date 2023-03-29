@@ -11,6 +11,7 @@ font:
     y: 8
 
 window:
+  opacity: 0.8
   dynamic_padding: false
   decorations: buttonless
 
