@@ -1,11 +1,11 @@
-alias acfg="nvim ~/dotfiles/antigen/aliases.zsh"
-alias nvc="cd ~/.config/nvim && nv init.lua"
+alias ac="nvim ~/dotfiles/antigen/aliases.zsh"
+alias nc="cd ~/.config/nvim && nv init.lua"
 alias zshconf="nvim ~/.zshrc"
-alias soacfg="source ~/dotfiles/antigen/aliases.zsh"
+alias sc="source ~/dotfiles/antigen/aliases.zsh"
 
-alias vim="nvim"
-alias vi="nvim"
-alias nv="nvim"
+alias n="nvim"
+alias c="clear"
+alias w="which"
 
 alias lg="lazygit"
 
@@ -53,7 +53,7 @@ alias cdnv="cd ~/dotfiles/nvim"
 
 #Make directory and cd into it
 mkd(){
-  mkdir $1 && cd $1
+  mkdir -p $1 && cd $1
 }
 
 alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
@@ -61,3 +61,4 @@ alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
 #Docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
+alias d="docker"
