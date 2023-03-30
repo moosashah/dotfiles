@@ -57,6 +57,8 @@ mkd(){
 }
 
 alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
+alias tmk="tmux kill-sess -t"
+alias tml="tmux ls"
 
 #Docker
 alias dcu="docker compose up"
