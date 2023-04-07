@@ -8,7 +8,7 @@ font:
     family: "CodeNewRoman Nerd Font"
   size: 22
   offset:
-    y: 8
+    y: 6
 
 window:
   opacity: 0.8
