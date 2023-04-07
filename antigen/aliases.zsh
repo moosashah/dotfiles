@@ -1,5 +1,5 @@
 alias ac="nvim ~/dotfiles/antigen/aliases.zsh"
-alias nc="cd ~/.config/nvim && nv init.lua"
+alias nc="cd ~/.config/nvim && nvim init.lua"
 alias zshconf="nvim ~/.zshrc"
 alias sc="source ~/dotfiles/antigen/aliases.zsh"
 
@@ -59,6 +59,7 @@ mkd(){
 alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
 alias tmk="tmux kill-sess -t"
 alias tml="tmux ls"
+alias t="tmux"
 
 #Docker
 alias dcu="docker compose up"
