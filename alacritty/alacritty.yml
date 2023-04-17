@@ -11,7 +11,10 @@ font:
     y: 6
 
 window:
-  opacity: 0.8
+  opacity: 1
+  padding:
+    y: 1
+    x: 10
   dynamic_padding: false
   decorations: buttonless
 
