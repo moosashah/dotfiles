@@ -21,10 +21,13 @@ alias yst='yarn start'
 alias yd='yarn dev'
 alias yb='yarn build'
 alias yt='yarn test'
+alias yl='yarn lint'
+alias yr='yarn clean && yarn'
 
 # Npm
 alias nrd='npm run dev'
 alias nri='npm install'
+alias nrs='npm run start'
 
 # Git 
 alias gss="git stash save -u"
