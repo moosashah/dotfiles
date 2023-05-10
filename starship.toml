@@ -7,13 +7,14 @@ $git_state\
 $git_status\
 $git_metrics\
 $nodejs\
+$line_break\
 $character"""
 
 add_newline = false
 
 [nodejs]
 format = "[$symbol($version )]($style)"
-disabled = true
+disabled = false
 
 [directory]
 style = "blue"
