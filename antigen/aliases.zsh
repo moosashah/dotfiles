@@ -1,5 +1,5 @@
 alias ac="nvim ~/dotfiles/antigen/aliases.zsh"
-alias nc="cd ~/.config/nvim && nvim init.lua"
+alias nc="cd ~/dotfiles/nvim && nvim init.lua"
 alias zshconf="nvim ~/.zshrc"
 alias sc="source ~/dotfiles/antigen/aliases.zsh"
 alias arg="alias | rg"
