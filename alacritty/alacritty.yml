@@ -23,25 +23,3 @@ selection:
 window:
   decorations: buttonless
   dynamic_padding: false
-
-# NOTE: helpful hex codes
-# \x1b = escape (useful for vim-related keybindings)
-# \x01 = control-a
-
-key_bindings:
-  - { key: Key1, mods: Command, chars: "\x011" }
-  - { key: Key2, mods: Command, chars: "\x012" }
-  - { key: Key3, mods: Command, chars: "\x013" }
-  - { key: Key4, mods: Command, chars: "\x014" }
-  - { key: R, mods: Command, chars: "\x01," } # rename the current tmux window
-  - { key: D, mods: Command|Shift, chars: "\x01\"" } # split tmux window horizontally
-  - { key: D, mods: Command, chars: "\x01%" } # split tmux window vertically
-  - { key: F, mods: Command|Shift, chars: "\x01\x5b\x2f" } # start tmux search mode
-  - { key: G, mods: Command, chars: "\x01g" } # open git manager 'jesseduffield/lazygit'
-  - { key: Comma, mods: Command, chars: "\x01'" } # Open Alacritty config in new window
-  - { key: Period, mods: Command, chars: "\x01N" } # Open Tmux config in new window
-  - { key: N, mods: Command, chars: "\x01m" } # Open Neovim config in new window
-  - { key: L, mods: Command, chars: "\x01L" } # switch to the last tmux session
-  - { key: T, mods: Command, chars: "\x01c" } # create a new tmux window
-  - { key: W, mods: Command, chars: "\x01x" } # kill the current pane
-  - { key: Z, mods: Command, chars: "\x01z" } # toggle zoom state of the current tmux pane
