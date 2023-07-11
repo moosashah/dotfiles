@@ -1,18 +1,14 @@
-live_config_reload: true
-
 env:
   TERM: xterm-256color
 
 font:
   normal:
     family: "CodeNewRoman Nerd Font"
-  size: 22
   offset:
-    y: 8
+    y: 10
+  size: 22
 
-window:
-  dynamic_padding: false
-  decorations: buttonless
+live_config_reload: true
 
 mouse:
   hints:
@@ -21,8 +17,12 @@ mouse:
     modifiers: Command
 
 selection:
-  semantic_escape_chars: ",|`:\"'()[]{}<>\t"
   save_to_clipboard: true
+  semantic_escape_chars: ",|`:\"'()[]{}<>\t"
+
+window:
+  decorations: buttonless
+  dynamic_padding: false
 
 # NOTE: helpful hex codes
 # \x1b = escape (useful for vim-related keybindings)

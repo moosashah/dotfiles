@@ -18,12 +18,13 @@ alias ll="exa --oneline --all --long --no-user"
 alias cat="bat"
 
 # Yarn
-alias yst='yarn start'
+alias ys='yarn start'
 alias yd='yarn dev'
 alias yb='yarn build'
 alias yt='yarn test'
 alias yl='yarn lint'
 alias yr='yarn clean && yarn'
+alias ysc='yarn build && yarn start'
 
 # Npm
 alias nrd='npm run dev'
@@ -69,4 +70,7 @@ alias tmd="tmux detach"
 #Docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
-alias d="docker"
+
+#Gopher
+alias gt="go test"
+alias gr="go run"
