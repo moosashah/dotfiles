@@ -1,7 +1,7 @@
 gui:
-  sidePanelWidth: 0.2 # gives you more space to show things side-by-side
-  skipUnstageLineWarning: true
+    sidePanelWidth: 0.2 # gives you more space to show things side-by-side
+    skipDiscardChangeWarning: true
 git:
-  paging:
-    colorArg: never
-    pager: delta --dark --paging=never
+    paging:
+        colorArg: never
+        pager: delta --dark --paging=never
