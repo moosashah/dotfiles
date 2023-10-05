@@ -13,6 +13,7 @@ alias lg="lazygit"
 #exa
 alias ls="exa --oneline --all"
 alias ll="exa --oneline --all --long --no-user"
+alias le="exa --tree"
 
 #cat to bat
 alias cat="bat"
