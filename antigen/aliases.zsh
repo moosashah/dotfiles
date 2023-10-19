@@ -18,7 +18,7 @@ alias le="exa --tree"
 #cat to bat
 alias cat="bat"
 
-# Yarn
+# yarn
 alias ys='yarn start'
 alias yd='yarn dev'
 alias yb='yarn build'
@@ -27,18 +27,20 @@ alias yl='yarn lint'
 alias yr='yarn clean && yarn'
 alias ysc='yarn build && yarn start'
 
-# Npm
+# npm
 alias nrd='npm run dev'
 alias nri='npm install'
 alias nrs='npm run start'
 
-# Git 
+# bun
+alias brd='bun run dev'
+alias brt='bun run test'
+
+# git 
 alias gss="git stash save -u"
 alias gpnb="git push -u origin HEAD"
 alias ghprme="gh pr create --assignee=@me --web"
 alias ghprv="gh pr view --web"
-alias cmh="npx ts-node -T ~/dotfiles/bin/cmh.ts"
-alias gmsg="conventional-commit"
 gspp(){
 	git stash pop stash@{$1}
 }
@@ -49,15 +51,10 @@ ghpr() {
   GH_FORCE_TTY=100% gh pr list | fzf --ansi --preview 'GH_FORCE_TTY=100% gh pr view {1}' --preview-window down --header-lines 3 | awk '{print $1}' | xargs gh pr checkout
 }
 
-
-
-# networkQuality //test internet speed
-alias speed="networkQuality"
-
 alias cdpc="cd ~/personalCoding"
 alias cdnv="cd ~/dotfiles/nvim"
 
-#Make directory and cd into it
+#make directory and cd into it
 mkd(){
   mkdir -p $1 && cd $1
 }
@@ -68,10 +65,10 @@ alias tml="tmux ls"
 alias t="tmux"
 alias tmd="tmux detach"
 
-#Docker
+#docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
 
-#Gopher
+#gopher
 alias gt="go test"
 alias gr="go run"
