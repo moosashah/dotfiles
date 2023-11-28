@@ -9,6 +9,7 @@ alias c="clear"
 alias w="which"
 
 alias lg="lazygit"
+alias ldk="lazydocker"
 
 #exa
 alias ls="exa --oneline --all"
@@ -25,7 +26,7 @@ alias yb='yarn build'
 alias yt='yarn test'
 alias yl='yarn lint'
 alias yr='yarn clean && yarn'
-alias ysc='yarn build && yarn start'
+alias ysc='yarn && yarn build && yarn start'
 
 # npm
 alias nrd='npm run dev'
