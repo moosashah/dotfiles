@@ -14,6 +14,7 @@
     ~/.config/alacritty: alacritty
     ~/.config/starship.toml: starship.toml
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
+    ~/Library/Application Support/lazydocker/config.yml: lazydocker/config.yml
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
