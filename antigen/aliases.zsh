@@ -69,6 +69,7 @@ alias tmd="tmux detach"
 #docker
 alias dcu="docker compose up"
 alias dcd="docker compose down"
+alias dcs="docker compose stop"
 
 #gopher
 alias gt="go test"
