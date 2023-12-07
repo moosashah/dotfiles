@@ -74,3 +74,6 @@ alias dcs="docker compose stop"
 #gopher
 alias gt="go test"
 alias gr="go run"
+
+#Ripgrep search files
+alias rgf="rg --files | rg"
