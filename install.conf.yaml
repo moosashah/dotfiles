@@ -22,3 +22,6 @@
     #     sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer,
     #   ]
     # - [sudo ln -s ~/dotfiles/bin/gtc.sh /usr/local/bin/gtc]
+  # - [sudo ln -s ~/dotfiles/bin/medlify-setup.sh /usr/local/bin/medlify-update]
+
+  # make sure to `chmod 755 /usr/local/bin/<script-name>`
