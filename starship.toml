@@ -7,6 +7,7 @@ $git_state\
 $git_status\
 $git_metrics\
 $nodejs\
+$aws\
 $line_break\
 $character"""
 

@@ -1,33 +1,38 @@
 #!/usr/bin/env bash
 
-USERNAME="medlify-health"
-
-REPOSITORIES=("jnj-web-host-versalie"
-"med-integration-bc"
-"med-lib-contentmodel"
-"med-platform"
-"med-svc-auth"
-"med-svc-bff"
-"med-svc-bff-webhook"
-"med-svc-cart"
-"med-svc-checkout"
-"med-svc-communications"
-"med-svc-fulfilment"
-"med-svc-health-profile"
-"med-svc-orders"
-"med-svc-payments"
-"med-svc-pdf"
-"med-svc-pim"
-"med-svc-schema-manager"
-"med-svc-users"
-"med-svc-utils"
-"med-web-cart"
-"med-web-checkout"
-"med-web-component-library"
-"med-web-product"
-"med-web-shell-app")
-
-TOKEN="${GITHUB_TOKEN}"
+REPOSITORIES=(
+    "med-lib-contentmodel"
+    "jnj-lib-contentmodel"
+    #backend
+    "med-integration-bc"
+    "med-platform"
+    "med-svc-auth"
+    "med-svc-bff"
+    "med-svc-bff-webhook"
+    "med-svc-cart"
+    "med-svc-checkout"
+    "med-svc-communications"
+    "med-svc-fulfilment"
+    "med-svc-health-profile"
+    "med-svc-orders"
+    "med-svc-payments"
+    "med-svc-pdf"
+    "med-svc-pim"
+    "med-svc-schema-manager"
+    "med-svc-users"
+    "med-svc-utils"
+    #frontend
+    "jnj-web-host-versalie"
+    "med-web-auth"
+    "med-web-cart"
+    "med-web-checkout"
+    "med-web-component-library"
+    "med-web-homepage"
+    "med-web-product"
+    "med-web-questionnaire"
+    "med-web-shell-app"
+    "med-web-user"
+)
 
 # Variables for statistics
 DIRECTORY=$(mktemp -d)
@@ -48,8 +53,8 @@ clone_or_pull(){
     # If the repo does not exist
     if [ ! -d "$REPO" ]; then
         echo "pulling $REPO"
-        # gh repo clone $USERNAME/$REPO> /dev/null 2>&1 && echo "$REPO" >> $PULLED_FILE
-        git clone "https://github.com/$USERNAME/$REPO.git" > /dev/null 2>&1 && echo "$REPO" >> $PULLED_FILE
+        # gh repo clone medlify-health/$REPO> /dev/null 2>&1 && echo "$REPO" >> $PULLED_FILE
+        git clone "https://github.com/medlify-health/$REPO.git" > /dev/null 2>&1 && echo "$REPO" >> $PULLED_FILE
     # If the repo exists
     else
         cd $REPO
@@ -69,8 +74,6 @@ clone_or_pull(){
 }
 
 export -f clone_or_pull
-export USERNAME
-export TOKEN
 export PULLED_FILE
 export UPDATED_FILE
 export UP_TO_DATE_FILE
