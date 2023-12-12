@@ -1,8 +1,8 @@
 env:
   TERM: xterm-256color
 
-import:
- - ~/.config/alacritty/themes/themes/rose-pine-dawn.yaml
+#import:
+# - ~/.config/alacritty/themes/themes/rose-pine-dawn.yaml
 
 font:
   normal:
