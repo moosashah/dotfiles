@@ -77,3 +77,5 @@ alias gr="go run"
 
 #Ripgrep search files
 alias rgf="rg --files | rg"
+
+alias http="http --format-options json.sort_keys:false"
