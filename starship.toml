@@ -8,6 +8,7 @@ $git_status\
 $git_metrics\
 $nodejs\
 $aws\
+$cmd_duration\
 $line_break\
 $character"""
 
@@ -38,5 +39,3 @@ style = "bright-black"
 
 [git_metrics]
 disabled = false
-
-
