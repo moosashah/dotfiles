@@ -19,8 +19,11 @@ Trying out Wezterm
   update medlify microservices and microfrontend repos
 
 ## Dotbot
-`install.conf.yaml` sets up symlinks from dotfiles to $HOME/.config
-run `./install` to run dotbot
+`install.conf.yaml` sets up symlinks from dotfiles to $HOME/.config 
+
+```sh
+./install
+```
 
 ## lazydocker
 tui for docker
