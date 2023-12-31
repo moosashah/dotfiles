@@ -12,10 +12,12 @@
     ~/.config/nvim: nvim
     ~/.config/lazygit: lazygit
     ~/.config/alacritty: alacritty
+    ~/.config/wezterm: wezterm
     ~/.config/starship.toml: starship.toml
     ~/Library/Application Support/lazygit/config.yml: lazygit/config.yml
     ~/Library/Application Support/lazydocker/config.yml: lazydocker/config.yml
 
+  # make sure to `chmod 755 /usr/local/bin/<script-name>`
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     # - [
@@ -24,4 +26,3 @@
     # - [sudo ln -s ~/dotfiles/bin/gtc.sh /usr/local/bin/gtc]
   # - [sudo ln -s ~/dotfiles/bin/medlify-setup.sh /usr/local/bin/medlify-update]
 
-  # make sure to `chmod 755 /usr/local/bin/<script-name>`
