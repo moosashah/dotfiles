@@ -16,26 +16,20 @@ add_newline = false
 
 [nodejs]
 format = "[$symbol($version )]($style)"
-disabled = false
 
 [directory]
-style = "blue"
 read_only = " "
 truncation_length = 4
 truncate_to_repo = true
 
 [git_branch]
 format = "[$symbol$branch]($style) "
-style = "yellow"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
-style = "cyan"
-disabled = false
 
 [git_state]
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
-style = "bright-black"
 
-[git_metrics]
-disabled = false
+[aws]
+disabled = true
