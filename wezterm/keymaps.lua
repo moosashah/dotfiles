@@ -1,4 +1,13 @@
-local wt_action = require("wezterm").action
+local act = require("wezterm").action
+
+local multiple_actions = function(keys)
+    local actions = {}
+    for key in keys:gmatch(".") do
+        table.insert(actions, act.SendKey({ key = key }))
+    end
+    table.insert(actions, act.SendKey({ key = "\n" }))
+    return act.Multiple(actions)
+end
 
 local key_table = function(mods, key, action)
     return {
@@ -14,9 +23,9 @@ end
 
 local cmd_to_tmux = function(key, tmux_key)
     return cmd_key(key,
-        wt_action.Multiple({
-            wt_action.SendKey({ mods = "CTRL", key = "a" }),
-            wt_action.SendKey({ key = tmux_key }),
+        act.Multiple({
+            act.SendKey({ mods = "CTRL", key = "a" }),
+            act.SendKey({ key = tmux_key }),
         }))
 end
 
@@ -34,8 +43,10 @@ return {
     cmd_to_tmux("D", "\""),
     -- Open vertical split pane
     cmd_to_tmux("d", "%"),
+    -- Open previous sessions
+    cmd_to_tmux("L", "L"),
     -- Open previous pane
-    cmd_to_tmux("l", "L"),
+    cmd_to_tmux("l", "l"),
     -- Open Neovim config
     cmd_to_tmux("n", "m"),
     -- rename tmux window
@@ -46,4 +57,22 @@ return {
     cmd_to_tmux("w", "x"),
     -- zoom on pane
     cmd_to_tmux("z", "z"),
+    { key = 'q', mods = 'CMD', action = act.QuitApplication },
+    { key = 'v', mods = 'CMD', action = act.PasteFrom("Clipboard") },
+    {
+        key = 's',
+        mods = 'CMD',
+        action = act.Multiple({
+            act.SendKey({ key = "\x1b" }),
+            multiple_actions(":w"),
+        })
+    },
+    {
+        key = 'S',
+        mods = 'CMD',
+        action = act.Multiple({
+            act.SendKey({ key = "\x1b" }),
+            multiple_actions(":x"),
+        })
+    },
 }

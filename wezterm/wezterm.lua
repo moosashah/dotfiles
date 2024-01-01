@@ -8,6 +8,8 @@ local keys = require('keymaps')
 
 local config = {
     color_scheme = 'Tokyo Night Moon',
+    -- color_scheme = 'Atelierforest (light) (terminal.sexy)',
+    -- color_scheme = 'Tokyo Night Day',
     disable_default_key_bindings = true,
     enable_tab_bar = false,
     font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
