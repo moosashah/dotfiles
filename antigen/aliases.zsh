@@ -1,12 +1,7 @@
 alias ac="nvim ~/dotfiles/antigen/aliases.zsh"
-alias nc="cd ~/dotfiles/nvim && nvim init.lua"
 alias zshconf="nvim ~/.zshrc"
 alias sc="source ~/dotfiles/antigen/aliases.zsh"
 alias arg="alias | rg"
-
-alias n="nvim"
-alias c="clear"
-alias w="which"
 
 alias lg="lazygit"
 alias ldk="lazydocker"
@@ -61,10 +56,6 @@ mkd(){
 }
 
 alias tm="tmux a -t 🌴 || tmux new -s 🌴"
-alias tmk="tmux kill-sess -t"
-alias tml="tmux ls"
-alias t="tmux"
-alias tmd="tmux detach"
 
 #docker
 alias dcu="docker compose up"
@@ -78,4 +69,5 @@ alias gr="go run"
 #Ripgrep search files
 alias rgf="rg --files | rg"
 
+#Httpie
 alias http="http --format-options json.sort_keys:false"
