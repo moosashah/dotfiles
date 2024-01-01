@@ -15,6 +15,7 @@ local config = {
     font = wezterm.font('JetBrains Mono', { weight = 'Bold' }),
     font_size = 18,
     keys = keys,
+    send_composed_key_when_right_alt_is_pressed = false,
     window_close_confirmation = 'NeverPrompt',
     window_decorations = "RESIZE",
     window_padding = {
