@@ -60,7 +60,7 @@ mkd(){
   mkdir -p $1 && cd $1
 }
 
-alias tm="tmux a -t dotfiles || tmux new -s dotfiles"
+alias tm="tmux a -t 🌴 || tmux new -s 🌴"
 alias tmk="tmux kill-sess -t"
 alias tml="tmux ls"
 alias t="tmux"
