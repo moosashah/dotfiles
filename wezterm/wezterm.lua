@@ -7,6 +7,7 @@ local keys = require('keymaps')
 -- end
 
 local config = {
+    audible_bell = "Disabled",
     color_scheme = 'Tokyo Night Moon',
     -- color_scheme = 'Atelierforest (light) (terminal.sexy)',
     -- color_scheme = 'Tokyo Night Day',
@@ -16,6 +17,7 @@ local config = {
     font_size = 18,
     keys = keys,
     send_composed_key_when_right_alt_is_pressed = false,
+    window_background_opacity = 1,
     window_close_confirmation = 'NeverPrompt',
     window_decorations = "RESIZE",
     window_padding = {
