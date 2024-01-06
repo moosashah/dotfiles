@@ -3,6 +3,9 @@ alias zshconf="nvim ~/.zshrc"
 alias sc="source ~/dotfiles/antigen/aliases.zsh"
 alias arg="alias | rg"
 
+alias c="clear"
+alias n="nvim"
+
 alias lg="lazygit"
 alias ldk="lazydocker"
 
