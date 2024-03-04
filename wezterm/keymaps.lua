@@ -57,6 +57,21 @@ return {
     cmd_to_tmux("w", "x"),
     -- zoom on pane
     cmd_to_tmux("z", "z"),
+
+    -- Base - root vertrical repo
+    cmd_to_tmux("b", "b"),
+
+    -- Switch between sessions
+    cmd_to_tmux("j", "j"),
+    cmd_to_tmux("k", "k"),
+    cmd_to_tmux("l", "l"),
+    cmd_to_tmux(";", ";"),
+
+    -- Med platform
+    cmd_to_tmux("h", "h"),
+    -- Med web component library
+    cmd_to_tmux("c", "C"),
+
     { key = 'q', mods = 'CMD', action = act.QuitApplication },
     { key = 'v', mods = 'CMD', action = act.PasteFrom("Clipboard") },
     {
