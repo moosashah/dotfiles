@@ -32,4 +32,4 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 
 [aws]
-disabled = true
+disabled = false
