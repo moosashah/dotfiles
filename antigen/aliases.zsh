@@ -25,6 +25,7 @@ alias yt='yarn test'
 alias yl='yarn lint'
 alias yr='yarn clean && yarn'
 alias ysc='yarn && yarn build && yarn start'
+alias yisc='yarn install --force && yarn build && yarn start'
 
 # npm
 alias nrd='npm run dev'
