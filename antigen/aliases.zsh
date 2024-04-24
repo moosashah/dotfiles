@@ -19,13 +19,27 @@ alias cat="bat"
 
 # yarn
 alias ys='yarn start'
-alias yd='yarn dev'
 alias yb='yarn build'
 alias yt='yarn test'
 alias yl='yarn lint'
 alias yr='yarn clean && yarn'
 alias ysc='yarn && yarn build && yarn start'
 alias yisc='yarn install --force && yarn build && yarn start'
+
+yd(){
+    if [[ -f "package-lock.json" ]]; then
+        echo "using npm"
+        npm run dev
+    elif [[ -f "yarn.lock" ]]; then
+        echo "using yarn"
+        yarn dev
+    elif [[ -f "pnpm-lock.yaml" ]]; then
+        echo "using pnpm"
+        pnpm run dev
+    else
+        echo "no lock file found"
+    fi
+}
 
 # npm
 alias nrd='npm run dev'

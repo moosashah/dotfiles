@@ -7,15 +7,13 @@ $git_state\
 $git_status\
 $git_metrics\
 $nodejs\
+$golang\
 $aws\
 $cmd_duration\
 $line_break\
 $character"""
 
 add_newline = false
-
-[nodejs]
-format = "[$symbol($version )]($style)"
 
 [directory]
 read_only = " "
@@ -32,4 +30,4 @@ format = '([\[$all_status$ahead_behind\]]($style) )'
 format = '\([$state( $progress_current/$progress_total)]($style)\) '
 
 [aws]
-disabled = false
+disabled = true
