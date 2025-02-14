@@ -11,7 +11,6 @@
     ~/.config/antibody: antibody
     ~/.config/nvim: nvim
     ~/.config/lazygit: lazygit
-    ~/.config/alacritty: alacritty
     ~/.config/wezterm: wezterm
     ~/.config/starship.toml: starship.toml
     ~/Library/Preferences/glow/glow.yml: glow.yml

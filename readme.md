@@ -30,7 +30,3 @@ tui for docker
 
 ## lazygit
 tui for git
-
-## Archive
-- alacritty
-- iterm2
