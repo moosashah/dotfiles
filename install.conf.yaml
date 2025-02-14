@@ -8,7 +8,7 @@
 
 - link:
     ~/.config/tmux: tmux
-    ~/.config/antigen: antigen
+    ~/.config/antibody: antibody
     ~/.config/nvim: nvim
     ~/.config/lazygit: lazygit
     ~/.config/alacritty: alacritty
@@ -21,6 +21,7 @@
   # make sure to `chmod 755 /usr/local/bin/<script-name>`
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    # - [antidote bundle <~/dotfiles/antibody/plugins.txt >~/dotfiles/antibody/plugins.zsh, Generating Static plugin file for Antibody]
     # - [
     #     sudo ln -s ~/dotfiles/bin/tmux-sessionizer /usr/local/bin/tmux-sessionizer,
     #   ]

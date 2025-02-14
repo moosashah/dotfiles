@@ -1,6 +1,6 @@
-alias ac="nvim ~/dotfiles/antigen/aliases.zsh"
+alias ac="nvim ~/dotfiles/antibody/aliases.zsh"
 alias zshconf="nvim ~/.zshrc"
-alias sc="source ~/dotfiles/antigen/aliases.zsh"
+alias sc="source ~/dotfiles/antibody/aliases.zsh"
 alias arg="alias | rg"
 
 alias c="clear"
@@ -9,10 +9,10 @@ alias n="nvim"
 alias lg="lazygit"
 alias ldk="lazydocker"
 
-#exa
-alias ls="exa --oneline --all"
-alias ll="exa --oneline --all --long --no-user"
-alias le="exa --tree"
+#eza
+alias ls="eza --oneline --all"
+alias ll="eza --oneline --all --long --no-user"
+alias le="eza --tree"
 
 #cat to bat
 alias cat="bat"
@@ -29,15 +29,25 @@ alias yisc='yarn install --force && yarn build && yarn start'
 yd(){
     if [[ -f "package-lock.json" ]]; then
         echo "using npm"
+        npm i
         npm run dev
     elif [[ -f "yarn.lock" ]]; then
         echo "using yarn"
+        yarn
         yarn dev
     elif [[ -f "pnpm-lock.yaml" ]]; then
         echo "using pnpm"
+        pnpm i
         pnpm run dev
+    elif [[ -f "bun.lockb" ]]; then
+        echo "using bun"
+        bun i
+        bun run dev
     else
         echo "no lock file found"
+        echo "using bun"
+        bun i
+        bun run dev
     fi
 }
 
@@ -65,7 +75,7 @@ ghpr() {
   GH_FORCE_TTY=100% gh pr list | fzf --ansi --preview 'GH_FORCE_TTY=100% gh pr view {1}' --preview-window down --header-lines 3 | awk '{print $1}' | xargs gh pr checkout
 }
 
-alias cdpc="cd ~/personalCoding"
+alias cdpc="cd ~/code"
 alias cdnv="cd ~/dotfiles/nvim"
 
 #make directory and cd into it

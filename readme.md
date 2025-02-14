@@ -6,8 +6,10 @@ Trying out Wezterm
 - It has ligatures
 - Picks up option key so nvim keymaps can actually use correct key
 
-## Antigen
-- Zsh config
+## Antibody
+- Zsh plugin manager
+cmd to generate static plugin file - doesn't work inside of ./install for some reason
+`antidote bundle <~/dotfiles/antibody/plugins.txt >~/dotfiles/antibody/plugins.zsh`
 
 ## Bin
 

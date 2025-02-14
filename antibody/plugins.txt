@@ -1,0 +1,7 @@
+getantidote/use-omz        
+ohmyzsh/ohmyzsh path:plugins/git 
+ohmyzsh/ohmyzsh path:plugins/fzf  
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+aloxaf/fzf-tab
+atuinsh/atuin
