@@ -17,8 +17,6 @@ cmd to generate static plugin file - doesn't work inside of ./install for some r
   switch between/open tmux sessions with fuzzy finding
 ### gtc
   stash and drop stash to clean changes
-### medlify-setup
-  update medlify microservices and microfrontend repos
 
 ## Dotbot
 `install.conf.yaml` sets up symlinks from dotfiles to $HOME/.config 
