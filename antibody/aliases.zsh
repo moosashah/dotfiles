@@ -5,6 +5,7 @@ alias arg="alias | rg"
 
 alias c="clear"
 alias n="nvim"
+alias ..='cd ..'
 
 alias lg="lazygit"
 alias ldk="lazydocker"
