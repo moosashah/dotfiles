@@ -8,11 +8,14 @@ local function get_appearance()
     return 'Dark'
 end
 
+-- color_scheme = "Catppuccin Mocha"
 local function scheme_for_appearance(appearance)
     if appearance:find 'Dark' then
-        return 'Tokyo Night Storm'
+        -- return 'Tokyo Night Storm'
+        return 'Catppuccin Mocha'
     else
-        return 'Tokyo Night Day'
+        -- return 'Tokyo Night Day'
+        return 'Catppuccin Latte'
     end
 end
 
