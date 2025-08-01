@@ -3,7 +3,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(find ~/ ~/Vertrical ~/personalCoding -mindepth 1 -maxdepth 1 -type d | fzf-tmux -p --reverse)
+    selected=$(find ~/ ~/osc/feature ~/osc ~/code -mindepth 1 -maxdepth 1 -type d | fzf-tmux -p --reverse)
 fi
 
 if [[ -z $selected ]]; then
