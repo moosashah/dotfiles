@@ -41,6 +41,7 @@ return {
     cmd_to_tmux(".", "N"),
     -- Open horizontal split pane
     cmd_to_tmux("D", "\""),
+    cmd_to_tmux("E", "E"),
     -- Open vertical split pane
     cmd_to_tmux("d", "%"),
     -- Open previous sessions
@@ -66,11 +67,6 @@ return {
     cmd_to_tmux("k", "k"),
     cmd_to_tmux("l", "l"),
     cmd_to_tmux(";", ";"),
-
-    -- Med platform
-    cmd_to_tmux("h", "h"),
-    -- Med web component library
-    cmd_to_tmux("c", "C"),
 
     { key = 'q', mods = 'CMD', action = act.QuitApplication },
     { key = 'v', mods = 'CMD', action = act.PasteFrom("Clipboard") },
