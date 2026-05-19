@@ -1,5 +1,7 @@
 local wezterm = require('wezterm')
 local keys = require('keymaps')
+local act = wezterm.action
+
 
 local function get_appearance()
     if wezterm.gui then
@@ -21,6 +23,7 @@ end
 
 local config = {
     audible_bell = "Disabled",
+    bypass_mouse_reporting_modifiers = 'SUPER',
     color_scheme = scheme_for_appearance(get_appearance()),
     disable_default_key_bindings = true,
     enable_tab_bar = false,
@@ -28,6 +31,7 @@ local config = {
     font_size = 15,
     harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' },
     keys = keys,
+    mouse_bindings = {},
     send_composed_key_when_right_alt_is_pressed = false,
     window_background_opacity = 1,
     window_close_confirmation = 'NeverPrompt',
