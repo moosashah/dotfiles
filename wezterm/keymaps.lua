@@ -69,6 +69,7 @@ return {
     cmd_to_tmux(";", ";"),
 
     { key = 'q', mods = 'CMD', action = act.QuitApplication },
+    { key = 'g', mods = 'CMD', action = act.SendKey({ mods = "CTRL", key = "g" }) },
     { key = 'v', mods = 'CMD', action = act.PasteFrom("Clipboard") },
     {
         key = 's',
