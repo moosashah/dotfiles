@@ -7,7 +7,7 @@ alias n="nvim"
 alias ..='cd ..'
 
 # alias cc="claude --allow-dangerously-skip-permissions --model claude-opus-4-6"
-alias cc="codex"
+alias cc="codex --yolo"
 
 alias lg="lazygit"
 alias ldk="lazydocker"
