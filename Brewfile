@@ -290,9 +290,15 @@ cask "clickup"
 cask "steipete/tap/codexbar"
 # Voice and text chat software
 cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
 # Web browser
 cask "firefox"
 cask "font-space-mono-nerd-font"
+# Client for the Google Drive storage service
+cask "google-drive"
+# Web browser
+cask "google-chrome"
 # Desktop client for GitHub repositories
 cask "github"
 # Keyboard customiser
@@ -313,6 +319,8 @@ cask "ngrok"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# App to write, plan, collaborate, and get organised
+cask "notion"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Collaboration platform for API development
@@ -331,6 +339,12 @@ cask "shottr"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Utilise mouse side navigation buttons
+cask "sensiblesidebuttons"
+# Minimal GUI for AI code agents
+cask "t3-code"
+# Native GUI tool for relational databases
+cask "tableplus"
 # Unpacks archive files
 cask "the-unarchiver"
 # Open-source code editor
@@ -338,6 +352,8 @@ cask "the-unarchiver"
 cask "vlc"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
+# Voice-to-text dictation with AI-powered auto-editing
+cask "wispr-flow"
 # REST, GraphQL and gRPC client
 cask "yaak"
 go "github.com/githubnemo/CompileDaemon"
